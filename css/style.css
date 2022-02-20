@@ -52,7 +52,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    opacity: 5%;
+    opacity: 3%;
     padding: 50px;
 }
 .grid-conteudo {
@@ -60,7 +60,7 @@ main {
 }
 .header { 
     width: 100%;
-    background-image: linear-gradient(rgb(0, 0, 0),rgb(10, 12, 19)90%);
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0)10%,rgb(10, 12, 19));
     height: 400px;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -98,10 +98,11 @@ main {
 .header-texto-grid {
     margin:  0 auto;
     margin-top: 130px;
-    background-color: rgba(32, 39, 41,0.9);
+    background-color: rgb(21, 27, 32);
     border-radius: 10px ;
     width: 300px;
     height: 850px;
+    box-shadow: 0 0 5px black;
     
 }
 .header-texto {
@@ -146,6 +147,7 @@ main {
     background-color: rgb(242, 249, 255);
     border-radius: 25px;
     margin-top: 20px;
+    box-shadow: 0 0 10px black;
 
 }
 
@@ -185,11 +187,14 @@ main {
       
     
 }
-.about h2 {
-    padding-bottom: 30px;
+.about-h2 {
+    margin-bottom: 30px;
     font-family: 'Righteous', cursive;
     font-size: 2em;
     letter-spacing: 0.05em;
+    border-bottom: 2px solid rgb(84, 198, 243);
+    padding-bottom: 10px;
+    text-shadow: 0 0 2px black;
 }
 .info p { 
     font-family: 'Oswald', sans-serif;
@@ -215,6 +220,7 @@ h3 {
     color: rgb(242, 249, 255);
     text-align: start;
     letter-spacing: 0.06em;
+    text-shadow: 0 2px 3px black;
 }
 
 table {
@@ -223,6 +229,7 @@ table {
 }
 td {
     padding: 10px  10px 0px 0px;
+    text-shadow: 0 2px 2px black;
 }
 
 .coluna1 {
@@ -230,6 +237,7 @@ td {
     font-family: 'Karla', sans-serif;
     font-size: 1em;
     font-weight: 500;
+    
 }
 .coluna2 {
     font-family: 'Karla',sans-serif;
@@ -281,36 +289,41 @@ td {
 .interesse-item {
     background-color: rgb(29, 35, 44);
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 75px;
     height: 60px;
     text-align: center;
+    box-shadow: 0 0 5px black, inset 0 0 7px rgb(29, 29, 29);
+}
+.interesse-item img {
+    width: 35px;
+    margin-bottom: 5px;
 }
 h4 {
     color: rgb(242, 249, 255);
-    font-size: 0.9em;
+    font-size: 0.8em;
     font-family: 'Karla', sans-serif;;
 }
 .curriculo {
     margin: 0 auto;
-    width: 115px;
+    width: 120px;
     height: 20px;
-    padding: 10px 20px;
+    padding: 10px 15px;
     margin-top: 50px;
     border: 1px solid rgb(242, 249, 255);
     border-radius: 3px;
     font-family: 'Karla', sans-serif;
+    box-shadow: 0px 0px 7px rgb(8, 8, 8)
 
 }
-aside {
-    width: 100%;
-}
+
 .curriculo h4 {
+    font-size: 1em;
     float: left;
 }
 .curriculo img {
-    margin-left:8px ;
-    width: 15px;
-    border: 1px soli white;
-    border-radius: 25px;
+    margin-left:6px ;
+    width: 17px;
+    
+    
 }
