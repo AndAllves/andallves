@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;500&family=Overpass:wght@300;400&family=Righteous&display=swap');
 * { padding: 0; margin: 0;}
+
 main {
     width: 100%;
 }
@@ -43,8 +44,9 @@ main {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+
 .background {
-    width: 92.5%;
+    width: 92.6%;
     height: 500px;
     background-image: url(../imagens/background.jpg);
     background-repeat: no-repeat;
@@ -56,43 +58,50 @@ main {
 .grid-conteudo {
     width: 100%;
 }
-.header {
+.header { 
+    width: 100%;
     background-image: linear-gradient(rgb(0, 0, 0),rgb(10, 12, 19)90%);
     height: 400px;
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 .header-centro {
     
-    width: 250px;
+    width: 100%;
     height: 300px;
     margin: 0 auto;
-    padding: 20px;
-    color: white;
     display: flex;
     flex-direction: column;
+    position: absolute;
 }
 .header-imagem {
-    position: absolute;
-    
-}
-.header-imagem img{
-    
-    width: 230px;
-    border: 9px solid rgb(84, 198, 243);
-    border-radius: 125px;
-}
-.header-centro {
- 
-}
-.header-texto-grid {
+    width: 242px;
     margin: 0 auto;
-    margin-top: 120px;
-    background-color: rgb(32, 39, 41);
+    position: relative;
+    
+    
+}
+
+.header-imagem img{
+    position: absolute;
+    width: 14em;
+    border: 9px solid rgb(84, 198, 243);
+    border-radius: 140px;
+    box-shadow: 0 0 1px 25px rgba(84,198,243, 0.2);
+}
+
+.header-centro {
+    width: 100%
+}
+
+.header-texto-grid {
+    margin:  0 auto;
+    margin-top: 130px;
+    background-color: rgba(32, 39, 41,0.9);
     border-radius: 10px ;
     width: 300px;
-    height: 800px;
-    opacity: 100%;
+    height: 850px;
     
 }
 .header-texto {
@@ -108,12 +117,20 @@ main {
     color: rgb(242, 249, 255);
     letter-spacing: 0.05em;
 }
-.info p { 
-    font-family: 'Oswald', sans-serif;
-}
+
 .header-texto p {
     font-family: 'Karla',sans-serif;
+    color: rgb(242, 249, 255);
 }
+
+
+
+
+
+
+
+
+
 .redessociais {
     width: 200px;
     margin: 0 auto;
@@ -131,6 +148,7 @@ main {
     margin-top: 20px;
 
 }
+
 .conteudo-secundario {
     width: 100%;
     height: 650px;
@@ -142,6 +160,13 @@ main {
 .conteudo-secundario-grid {
     width: 80%;
     margin: 0 auto;
+}
+.about {
+    text-align: center;
+    color: rgb(242, 249, 255);
+    padding-top: 50px; 
+    width: 100%;
+    
 }
 .info {
     width: 50px;
@@ -160,20 +185,19 @@ main {
       
     
 }
-.about {
-    text-align: center;
-    color: rgb(242, 249, 255);
-    padding-top: 50px; 
-    
-}
-
-
 .about h2 {
     padding-bottom: 30px;
     font-family: 'Righteous', cursive;
     font-size: 2em;
     letter-spacing: 0.05em;
 }
+.info p { 
+    font-family: 'Oswald', sans-serif;
+}
+
+
+
+
 .texto-outracor {
     color: rgb(84, 198, 243);
     font-weight: 400;
@@ -185,10 +209,22 @@ main {
     font-weight: 200;
 
 }
+
+h3 {
+    font-family: 'Righteous', cursive;
+    color: rgb(242, 249, 255);
+    text-align: start;
+    letter-spacing: 0.06em;
+}
+
 table {
-    width: 300px;
+    width: 400px;
     padding-top: 10px;
 }
+td {
+    padding: 10px  10px 0px 0px;
+}
+
 .coluna1 {
     color: rgb(84, 198, 243);
     font-family: 'Karla', sans-serif;
@@ -207,47 +243,39 @@ table {
     border-radius: 3px;
     text-shadow: 0 0 3px black;
 }
-td {
-    padding: 10px  10px 0px 0px;
     
-}
+
 .conteudo-pessoal {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
     margin-top: 40px;
+    width: 100%;
 }
-h3 {
-    font-family: 'Righteous', cursive;
-    color: rgb(242, 249, 255);
-    text-align: start;
-    letter-spacing: 0.06em;
-}
+
 
 .informacoes {
     display: flex;
     flex-direction: column;
+    width: 50%;
 
 }
 .interesses {
     display: flex;
     flex-direction: column;
-    width: 450px;
     
-    
-
 }
 .interesses-linha {
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    gap: 25px;
+    gap: 20px
 }
 .interesses-coluna {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 20px
 
 }
 .interesse-item {
@@ -256,7 +284,6 @@ h3 {
     border-radius: 5px;
     width: 75px;
     height: 60px;
-    gap: 30px;
     text-align: center;
 }
 h4 {
@@ -274,6 +301,9 @@ h4 {
     border-radius: 3px;
     font-family: 'Karla', sans-serif;
 
+}
+aside {
+    width: 100%;
 }
 .curriculo h4 {
     float: left;
