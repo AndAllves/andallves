@@ -150,6 +150,11 @@ main {
     box-shadow: 0 0 10px black;
 
 }
+.redessociais img:hover {
+    border: 1px solid rgb(84, 198, 243);
+    background-color: rgb(84, 198, 243);
+    border-radius: 25px;
+}
 
 .conteudo-secundario {
     width: 100%;
@@ -209,6 +214,9 @@ main {
     font-family: 'Karla', sans-serif;
     font-weight: 200;
 
+}
+.strong {
+    font-weight: 400;
 }
 
 h3 {
@@ -326,7 +334,7 @@ h4 {
     font-size: 1em;
     float: left;
 }
-.curriculo h4 a {
+.curriculo a {
     text-decoration: none;
     color: rgb(242, 249, 255);
 }
